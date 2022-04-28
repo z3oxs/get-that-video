@@ -1,0 +1,19 @@
+{
+  "name": "get-that-video",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "A module to get direct URL of media from some platforms [WIP]",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "get-that-video": "file:.yalc/get-that-video"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "npx tsc"
+  }
+}
