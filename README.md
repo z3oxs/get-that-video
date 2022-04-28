@@ -13,11 +13,10 @@ _**If you want to contribute sending an idea or implementing a new platform hand
 &nbsp;
 # 📃 Usage/Documentation
 
-[Setup](#setup)<br>
-[Valid methods](#methods)
+[Setup](#-setup)<br>
+[Valid methods](#-valid-methods)
 
 &nbsp;
-<a name="#setup"></a>
 ## 🔧 Setup
 Install the package with `npm install get-that-video` or `yarn add get-that-video`.
 
@@ -43,7 +42,6 @@ async function getTwitterVideo(url) {
 ```
 
 &nbsp;
-<a name="#methods"></a>
 # 📎 Valid methods
 ## Twitter
 #### **getVideo** | Array of Objects
