@@ -1,4 +1,3 @@
-# ✅ get-that-video
 A module to fetch information and videos from some platforms.
 
 &nbsp;
