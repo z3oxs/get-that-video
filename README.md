@@ -13,7 +13,7 @@ _**If you want to contribute sending an idea or implementing a new platform hand
 &nbsp;
 # 📃 Usage/Documentation
 
-[Setup](#setup)
+[Setup](#setup)<br>
 [Valid methods](#methods)
 
 &nbsp;
@@ -52,7 +52,7 @@ Will fetch only video formats.
 #### **getInfo** | Object
 Will fetch a complete request, including user information and tweet information.
 
-Properties:
+> Properties:
 - user: Object
 - tweet: Object
 
@@ -70,6 +70,6 @@ Will fetch only video formats.
 Will fetch a complete request, including the title, author and formats information.
 
 Properties:
-title: String
-author: Object
-formats: Array of Objects
+- title: String
+- author: Object
+- formats: Array of Objects
