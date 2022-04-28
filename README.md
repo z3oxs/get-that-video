@@ -69,7 +69,7 @@ Will fetch only video formats.
 #### getInfo | Object
 Will fetch a complete request, including the title, author and formats information.
 
-Properties:
+> Properties:
 - title: String
 - author: Object
 - formats: Array of Objects
