@@ -1,6 +1,7 @@
 ![npm](https://img.shields.io/npm/dw/get-that-video)
 ![NPM](https://img.shields.io/npm/l/get-that-video)
 ![GitHub Repo stars](https://img.shields.io/github/stars/z3oxs/get-that-video?style=social)
+![GitHub issues](https://img.shields.io/github/issues/z3oxs/get-that-video)
 
 &nbsp;
 A module to fetch information and videos from some platforms.
