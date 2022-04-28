@@ -10,4 +10,3 @@ exports.Facebook = {
     getInfo: getInfo_1.default,
     getVideo: getVideo_1.default,
 };
-//# sourceMappingURL=index.js.map

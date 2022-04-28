@@ -16,7 +16,9 @@ const axios_1 = __importDefault(require("axios"));
 const getVideoInfo_1 = __importDefault(require("./getVideoInfo"));
 const getVideo = (url) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield axios_1.default.get(url)
+        const response = yield axios_1.default.get(url, {
+            transformResponse: String,
+        })
             .then(({ data }) => data);
         if (!response.includes(`"video"`)) {
             throw new Error('Possibly invalid URL parsed.');
@@ -30,4 +32,3 @@ const getVideo = (url) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.default = getVideo;
-//# sourceMappingURL=getVideo.js.map

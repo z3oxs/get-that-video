@@ -1,4 +1,4 @@
 // Valid libs export
-export { Twitter } from './Twitter';
-export { Rumble } from './Rumble';
-export { Facebook } from './Facebook';
+export { twitter } from './methods/twitter';
+export { rumble } from './methods/rumble';
+export { facebook } from './methods/facebook';

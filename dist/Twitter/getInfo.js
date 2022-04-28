@@ -29,17 +29,16 @@ const getInfo = (url) => __awaiter(void 0, void 0, void 0, function* () {
                 Host: 'twitter.com',
                 Authorization: tokens_json_1.TwitterAuthorization,
                 'X-Guest-Token': guestToken,
-            }
+            },
+            transformResponse: String,
         })
             .then(({ data }) => data);
         if (!response.includes(`"legacy"`)) {
             throw new Error('Possible invalid URL parsed.');
         }
-        const userInfo = JSON.parse(response.split(`"legacy":`)[1].split(`,"super_follow`)[0]);
-        const postInfo = JSON.parse(response.split(`"legacy":`)[2].split(`,"quick_promote`)[0]);
         const video = {
-            user: userInfo,
-            post: postInfo,
+            user: JSON.parse(response.split(`"legacy":`)[1].split(response.includes(`"professional"`) ? `,"professional` : `,"super_follow`)[0]),
+            tweet: JSON.parse(response.split(`"legacy":`)[2].split(`,"quick_promote`)[0]),
         };
         return video;
     }
@@ -48,4 +47,3 @@ const getInfo = (url) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.default = getInfo;
-//# sourceMappingURL=getInfo.js.map

@@ -1,2 +1,2 @@
-declare const getVideo: (url: string) => Promise<any>;
+declare const getVideo: (url: string) => Promise<JSON | string>;
 export default getVideo;

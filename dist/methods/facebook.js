@@ -11,10 +11,37 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.facebook = void 0;
 const axios_1 = __importDefault(require("axios"));
 const tokens_json_1 = require("../utils/tokens.json");
-const getInfo = (url) => __awaiter(void 0, void 0, void 0, function* () {
+class facebook {
+}
+exports.facebook = facebook;
+_a = facebook;
+// Return only the video formats as a Array of Objects
+facebook.getVideo = (url) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const response = yield axios_1.default.get(url, {
+            headers: {
+                Accept: tokens_json_1.FacebookAcceptHeader,
+            }
+        })
+            .then(({ data }) => data);
+        if (!response.includes(`"representations"`)) {
+            throw new Error('Possibly invalid URL parsed.');
+        }
+        const formats = JSON.parse(response.replace(`\\`, '').split(`"representations":`)[1].split(`,"video_id"`)[0]);
+        return formats;
+    }
+    catch (e) {
+        return String(e);
+    }
+});
+// Will return all important information about the video, like the title, author
+// and all the formats as a Array of Objects
+facebook.getInfo = (url) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const response = yield axios_1.default.get(url, {
             headers: {
@@ -36,4 +63,3 @@ const getInfo = (url) => __awaiter(void 0, void 0, void 0, function* () {
         return String(e);
     }
 });
-exports.default = getInfo;

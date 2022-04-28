@@ -21,18 +21,16 @@ const getGuestToken = () => __awaiter(void 0, void 0, void 0, function* () {
             headers: {
                 Accept: 'application/json',
                 Authorization: tokens_json_1.TwitterAuthorization,
-            }
+            },
         })
-            .then(r => r);
-        if (response.status !== 200 || response.data === '') {
+            .then(({ data }) => data);
+        if (!response.guest_token) {
             throw new Error;
         }
-        const { guest_token } = response.data;
-        return guest_token;
+        return response.guest_token;
     }
     catch (e) {
         return new Error;
     }
 });
 exports.default = getGuestToken;
-//# sourceMappingURL=getGuestToken.js.map

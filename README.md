@@ -25,30 +25,30 @@ _**If you want to contribute sending an idea or implementing a new platform hand
 ## 🔧 Setup
 Install the package with `npm install get-that-video` or `yarn add get-that-video`.
 
-All valid packages will do allusion to the platform name with the first letter in uppercase, like 'Twitter'.
+All valid packages will do allusion to the platform name, like 'twitter'.
 
 So, let's start making a simple script.
 
 ```js
-// If using ES Modules
-import { Twitter } from 'get-that-video';
-
+import { twitter } from 'get-that-video';
 // If using standard NodeJS
-const { Twitter } = require('get-that-video');
+// const { twitter } = require('get-that-video');
 
 async function getTwitterVideo(url) {
   // All 'get' returns will be a Object or a Array of Objects
-  const formats = await Twitter.getVideo('Some twitter status URL');
+  const formats = await twitter.getVideo('Some twitter status URL');
 
   console.log(formats[0].url); // Will return the URL of the first format in the array
 }
+
+getTwitterVideo();
 
 // You can easily implement inside any project :).
 ```
 
 &nbsp;
 # 📎 Valid methods
-## Twitter
+## twitter
 #### **getVideo** | Array of Objects
 Will fetch only video formats.
 
@@ -60,12 +60,12 @@ Will fetch a complete request, including user information and tweet information.
 - tweet: Object
 
 &nbsp;
-## Rumble
+## rumble
 #### **getVideo** | Object
 Will fetch a complete request, including information and formats.
 
 &nbsp;
-## Facebook
+## facebook
 #### getVideo | Array of Objects
 Will fetch only video formats.
 

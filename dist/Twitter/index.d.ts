@@ -1,4 +1,4 @@
-export declare const Twitter: {
-    getVideo: (url: string) => Promise<any>;
-    getInfo: (url: string) => Promise<any>;
-};
+declare class Twitter {
+    static getVideo(): Promise<void>;
+}
+export { Twitter };

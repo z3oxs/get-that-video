@@ -26,4 +26,3 @@ const getVideoInfo = (id) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.default = getVideoInfo;
-//# sourceMappingURL=getVideoInfo.js.map

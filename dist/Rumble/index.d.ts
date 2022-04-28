@@ -1,3 +1,5 @@
-export declare const Rumble: {
-    getVideo: (url: string) => Promise<string | JSON>;
-};
+declare class Rumble {
+    static getVideoInfo: Function;
+    static getVideo(url: string): Promise<JSON | string>;
+}
+export { Rumble };

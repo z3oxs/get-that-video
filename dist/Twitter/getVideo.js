@@ -29,7 +29,8 @@ const getVideo = (url) => __awaiter(void 0, void 0, void 0, function* () {
                 Host: 'twitter.com',
                 Authorization: tokens_json_1.TwitterAuthorization,
                 'X-Guest-Token': guestToken,
-            }
+            },
+            transformResponse: String
         })
             .then(({ data }) => data);
         if (!response.includes(`"variants"`)) {
@@ -43,4 +44,3 @@ const getVideo = (url) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.default = getVideo;
-//# sourceMappingURL=getVideo.js.map

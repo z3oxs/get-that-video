@@ -1,9 +1,9 @@
 {
   "name": "get-that-video",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "description": "A module to get direct URL of media from some platforms [WIP]",
-  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "A module to get direct URL of media from some platforms",
+  "version": "1.0.1",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2"
