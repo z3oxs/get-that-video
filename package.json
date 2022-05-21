@@ -1,9 +1,9 @@
 {
   "name": "get-that-video",
-  "main": "./dist/index.js",
+  "version": "1.0.2",
   "types": "./dist/index.d.ts",
-  "description": "A module to get direct URL of media from some platforms",
-  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "description": "A module to get direct URL of media from platforms",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2"
@@ -14,5 +14,7 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "npx tsc"
-  }
+  },
+  "repository": "git@github.com:z3oxs/get-that-video",
+  "private": false
 }

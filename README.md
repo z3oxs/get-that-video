@@ -76,3 +76,13 @@ Will fetch a complete request, including the title, author and formats informati
 - title: String
 - author: Object
 - formats: Array of Objects
+
+&nbsp;
+## reddit
+#### getVideo | Array of Objects
+Will return complete info, video and audio URLs.
+
+> Properties:
+- info: Array of Objects
+- video: Array of Objects
+- audio: String;
