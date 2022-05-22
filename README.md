@@ -11,6 +11,7 @@ A module to fetch information and videos from some platforms.
 - Twitter
 - Rumble
 - Facebook
+- Reddit
 
 &nbsp;
 _**If you want to contribute sending an idea or implementing a new platform handler, create a issue or a pull-request**_
